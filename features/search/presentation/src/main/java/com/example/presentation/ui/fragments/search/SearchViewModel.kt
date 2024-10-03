@@ -36,26 +36,5 @@ class SearchViewModel(
                 true
             else !it
         }
-//        _mainData.update {
-//            try {
-//                val res = it as UIState.Success
-//                val a = res.data.copy(showAllVacancies = !res.data.showAllVacancies)
-//                UIState.Success(a)
-//            } catch (e: TypeCastException) {
-//                e.printStackTrace()
-//                return
-//            }
-//            when (it) {
-//                is UIState.Success -> {
-//                    CustomUIState.ShowAllVacancies(it.data)
-//                }
-//                is CustomUIState.ShowAllVacancies -> {
-//                    UIState.Success(it.data)
-//                }
-//                else -> {
-//                    return
-//                }
-//            }
-//        }
     }
 }
