@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_search">Поиск</string>
+    <string name="nav_favorites">Избранное</string>
+    <string name="nav_responses">Отклики</string>
+    <string name="nav_messages">Сообщения</string>
+    <string name="nav_profile">Профиль</string>
+    <string name="hint_search">Должность, ключевые слова</string>
+    <string name="title_vacancies">Вакансии для вас</string>
+    <string name="title_btn_apply">Откликнуться</string>
+
+    <plurals name="vacancy">
+        <item quantity="one">вакансия</item>       <!-- Для чисел, заканчивающихся на 1, кроме 11 -->
+        <item quantity="few">вакансии</item>      <!-- Для чисел, заканчивающихся на 2, 3, 4, кроме 12-14 -->
+        <item quantity="many">вакансий</item>    <!-- Для чисел, заканчивающихся на 0, 5-9, а также 11-14 -->
+        <item quantity="other">вакансий</item>   <!-- Другие случаи (обычно совпадает с "many") -->
+    </plurals>
+
+    <plurals name="human">
+        <item quantity="one">человек</item>       <!-- Форма для чисел, оканчивающихся на 1 (например, 1, 21, 101), кроме 11 -->
+        <item quantity="few">человека</item>      <!-- Форма для чисел, оканчивающихся на 2, 3 или 4 (например, 2, 3, 4, 22, 23, 24), кроме 12, 13, 14 -->
+        <item quantity="many">человек</item>      <!-- Форма для чисел, оканчивающихся на 0, 5-9 (например, 5, 6, 25, 26), а также 11-14 -->
+        <item quantity="other">человек</item>     <!-- Другая форма (обычно совпадает с "many") для обработки всех остальных чисел -->
+    </plurals>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ts_title_1">22sp</dimen>
+    <dimen name="ts_title_2">20sp</dimen>
+    <dimen name="ts_title_3">16sp</dimen>
+    <dimen name="ts_title_4">14sp</dimen>
+    <dimen name="ts_text_1">14sp</dimen>
+    <dimen name="ts_button_text_1">16sp</dimen>
+    <dimen name="ts_button_text_2">14sp</dimen>
+    <dimen name="ts_tab_text">10sp</dimen>
+    <dimen name="ts_number">7sp</dimen>
+</resources>

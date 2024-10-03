@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BaseTextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Title1" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_title_1</item>
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+    </style>
+
+    <style name="Title2" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_title_2</item>
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+    </style>
+
+    <style name="Title3" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_title_3</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="Title4" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_title_4</item>
+        <item name="android:fontFamily">@font/sf_pro_display_medium</item>
+    </style>
+
+    <style name="Text1" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_text_1</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="ButtonText1" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_button_text_1</item>
+        <item name="android:fontFamily">@font/sf_pro_display_semibold</item>
+    </style>
+
+    <style name="ButtonText2" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_button_text_2</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="TabText" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_tab_text</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+
+    <style name="Number" parent="BaseTextView">
+        <item name="android:textSize">@dimen/ts_number</item>
+        <item name="android:fontFamily">@font/sf_pro_display_regular</item>
+    </style>
+</resources>
