@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/core" />
+            <option value="$PROJECT_DIR$/core-ui" />
+            <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/feature-account" />
+            <option value="$PROJECT_DIR$/feature-account/account-domain" />
+            <option value="$PROJECT_DIR$/feature-account/account-presentation" />
+            <option value="$PROJECT_DIR$/feature-auth" />
+            <option value="$PROJECT_DIR$/feature-auth/domain" />
+            <option value="$PROJECT_DIR$/feature-auth/presentation" />
+            <option value="$PROJECT_DIR$/feature-favorites" />
+            <option value="$PROJECT_DIR$/feature-favorites/favorites-domain" />
+            <option value="$PROJECT_DIR$/feature-favorites/favorites-presentation" />
+            <option value="$PROJECT_DIR$/feature-main" />
+            <option value="$PROJECT_DIR$/feature-main/main-domain" />
+            <option value="$PROJECT_DIR$/feature-main/main-presentation" />
+          </set>
+        </option>
+        <option name="resolveExternalAnnotations" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

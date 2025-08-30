@@ -1,0 +1,82 @@
+package com.example.main_presentation.ui.adapter
+
+import android.annotation.SuppressLint
+import android.view.LayoutInflater
+import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
+import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.core.model.Course
+import com.example.core_ui.databinding.ItemCourseBinding
+import com.example.core_ui.extesions.formatDate
+import com.example.core_ui.extesions.setUrlImage
+import com.example.core_ui.utils.ImageProvider
+import kotlin.random.Random
+
+class CoursesAdapter(
+    private val onItemClick: (item: Course) -> Unit,
+    private val onAddToFavoritesClick: (item: Course) -> Unit,
+) : ListAdapter<Course, CoursesAdapter.CourseViewHolder2>(diffCallBack) {
+
+    override fun onBindViewHolder(holder: CourseViewHolder2, position: Int) {
+        getItem(position)?.let {
+            holder.onBind(it)
+        }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = CourseViewHolder2(
+        ItemCourseBinding.inflate(
+            LayoutInflater.from(parent.context),
+            parent,
+            false
+        )
+    )
+
+    inner class CourseViewHolder2(private val binding: ItemCourseBinding) :
+        ViewHolder(binding.root) {
+        @SuppressLint("SetTextI18n")
+        fun onBind(item: Course): Unit = with(binding) {
+            tvTitle.text = item.title
+            tvSummary.text = item.text
+            tvRating.text = item.rate
+            tvDate.text = item.publishDate
+            ivBanner.setUrlImage(ImageProvider.getRandomImageUrl())
+            tvPrice.text = item.price
+            setFavoriteIcon(item)
+        }
+
+        init {
+            binding.root.setOnClickListener {
+                getItem(adapterPosition)?.let(onItemClick)
+            }
+            binding.ivAddToFavorite.setOnClickListener {
+                getItem(adapterPosition)?.let {
+                    it.hasLike = !it.hasLike
+                    setFavoriteIcon(it)
+                    onAddToFavoritesClick(it)
+                }
+            }
+        }
+
+        private fun setFavoriteIcon(item: Course) {
+            if (item.hasLike) {
+                binding.ivAddToFavorite.setImageResource(com.example.core_ui.R.drawable.ic_favorite_active)
+            } else {
+                binding.ivAddToFavorite.setImageResource(com.example.core_ui.R.drawable.ic_favorite)
+            }
+        }
+    }
+
+    companion object {
+        val diffCallBack = object : DiffUtil.ItemCallback<Course>() {
+            override fun areItemsTheSame(oldItem: Course, newItem: Course): Boolean {
+                return oldItem.id == newItem.id
+            }
+
+            override fun areContentsTheSame(oldItem: Course, newItem: Course): Boolean {
+                return oldItem == newItem
+            }
+        }
+    }
+}
